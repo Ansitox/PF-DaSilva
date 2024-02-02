@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
+:root {
+    --main-color: #3E8A53;
+    --secondary-color: #A9F291;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -38,7 +43,7 @@ nav {
     top: 150px;
     left: 0;
     height: 50px;
-    background-color: #3E8A53;
+    background-color: var(--main-color);
 }
 
 nav>ul>li {
@@ -59,7 +64,7 @@ nav>ul>li {
 .main-section>h1, .section>h2, .products-section>h2, .message-box>h2 {
     text-align: center;
     padding-bottom: 30px;
-    color: #3E8A53;
+    color: var(--main-color);
 }
 
 .main-section>h1, .products-section>h2 {
@@ -87,7 +92,7 @@ nav>ul>li {
     left: 10%;
     width: 80%;
     padding-bottom: 50px;
-    border-bottom: #3E8A53 20px solid;
+    border-bottom: var(--main-color) 20px solid;
     margin-bottom: 50px;
 }
 
@@ -119,7 +124,7 @@ nav>ul>li {
 }
 
 .product>h3, .product>h4 {
-    color: #3E8A53;
+    color: var(--main-color);
     text-transform: uppercase;
     font-size: 16px;
     padding: 15px 0;
@@ -144,7 +149,7 @@ nav>ul>li {
 .search-bar {
     width: 40%;
     height: 50px;
-    background-color: #A9F291;
+    background-color: var(--secondary-color);
     border-radius: 50px;
     padding: 0 10px;
 }
@@ -152,7 +157,7 @@ nav>ul>li {
 .search-bar>p, .filter-box>p {
     display: inline;
     font-size: 25px;
-    color: #3E8A53;
+    color: var(--main-color);
     font-weight: 500;
     padding-left: 20px;
     position: relative;
@@ -165,7 +170,7 @@ nav>ul>li {
     top: -50px;
     width: 15%;
     height: 50px;
-    background-color: #A9F291;
+    background-color: var(--secondary-color);
     border-radius: 50px;
 }
 
@@ -182,7 +187,7 @@ nav>ul>li {
 
 .titles {
     list-style-type: none;
-    color: #3E8A53;
+    color: var(--main-color);
     font-size: 40px;
     font-weight: 700;
     padding-top: 10px;
@@ -190,7 +195,7 @@ nav>ul>li {
 
 .items {
     list-style-type: none;
-    color: #3E8A53;
+    color: var(--main-color);
     font-size: 30px;
     font-weight: 400;
     padding-top: 10px;
@@ -243,7 +248,7 @@ nav>ul>li {
 .message-box>div {
     width: 90%;
     padding: 0 5%;
-    background-color: #A9F291;
+    background-color: var(--secondary-color);
     border-radius: 20px;
     height: 300px;
     font-size: 30px;
@@ -268,7 +273,7 @@ nav>ul>li {
 
 .contact, .social-media {
     list-style-type: none;
-    color: #3E8A53;
+    color: var(--main-color);
 }
 
 .social-media>iframe {
@@ -279,7 +284,7 @@ nav>ul>li {
 
 .footer-container {
     height: 300px;
-    background-color: #3E8A53;
+    background-color: var(--main-color);
 }
 
 .footer-container>ul {
@@ -313,7 +318,7 @@ h3 {
 
 .copyright-container {
     height: 50px;
-    background-color: #A9F291;
+    background-color: var(--secondary-color);
 }
 
 .copyright-container>p {
