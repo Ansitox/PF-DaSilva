@@ -12,53 +12,27 @@
     font-family: 'Rajdhani', sans-serif;
 }
 
-header {
-    padding-bottom: 20px;
+.logo-img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
 }
 
-.logo-container {
+.nav-container {
     position: fixed;
-    z-index: 10;
-    height: 150px;
     width: 100%;
-    background-color: #D4F9C8;
-    padding: 0 5%;
-}
-
-.header-logo {
-    display: inline;
-    width: 8%;
-    padding-right: 1%;
-}
-
-.header-text {
-    display: inline;
-    width: 45%;
-}
-
-nav {
-    position: fixed;
     z-index: 10;
-    width: 100%;
-    top: 150px;
-    left: 0;
-    height: 50px;
+    height: 120px;
     background-color: var(--main-color);
 }
 
-nav>ul>li {
-    display: inline;
-    color: black;
-    font-weight: 500;
-    font-size: 26px;
-    padding: 0 5%;
-    text-align: center;
+.container-fluid {
+    font-size: 30px;
+    background-color: var(--main-color);
 }
 
-.img-container {
-    height: 350px;
-    background-image: url('media/header-background.jpg');
-    background-size: cover;
+.nav-item>a:hover {
+    color: var(--secondary-color);
 }
 
 .main-section>h1, .section>h2, .products-section>h2, .message-box>h2 {
