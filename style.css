@@ -3,6 +3,7 @@
 :root {
     --main-color: #3E8A53;
     --secondary-color: #A9F291;
+    --terciary-color: #F4EE91;
 }
 
 * {
@@ -257,44 +258,88 @@
 }
 
 .footer-container {
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--main-color);
 }
 
-.footer-container>ul {
-    width: 30%;
-    padding: 0 1%;
-}
-
-footer>div>ul {
-    display: inline-block;
-    list-style-type: none;
+.info-container {
+    display: flex;
+    justify-content: space-around;
     color: white;
 }
 
-footer>div>ul>li {
-    font-size: 20px;
+.info-container>ul {
+    list-style-type: none;
+    padding-top: 20px;
+    font-size: 16px;
 }
 
-footer>div>ul>li>img {
-    padding-right: 14px;
+.info-container>ul>li {
+    padding-bottom: 10px;
 }
 
-h3 {
-    font-size: 24px;
-    font-weight: 700;
+.info-container>ul>li>h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--terciary-color);
 }
 
-.footer-services {
-    position: relative;
-    top: -40px;
+.info-container>ul>li>img {
+    padding-right: 10px;
+    max-width: 40px;
+    min-width: 20px;
+    width: 10%;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.media-icons {
+    display: none;
 }
 
 .copyright-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
     background-color: var(--secondary-color);
 }
 
-.copyright-container>p {
-    padding: 15px 0 15px 10px;
+@media only screen and (max-width: 768px) {
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .info-container>ul>li>h3 {
+        font-size: 24px;
+    }
+
+    .footer-section {
+        width: 50%;
+    }
+
+    .media-info {
+        display: none;
+    }
+
+    .media-icons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .media-icons>a {
+        padding: 10px;
+    }
+
+    .media-icons>a:hover {
+        background-color: var(--secondary-color);
+        border-radius: 50px;
+    }
 }
