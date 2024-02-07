@@ -3,6 +3,7 @@
 :root {
     --main-color: #3E8A53;
     --secondary-color: #A9F291;
+    --secondary-color-50: #A9F29150;
     --terciary-color: #F4EE91;
 }
 
@@ -374,6 +375,7 @@ body {
         font-size: 28px;
         font-weight: 600;
     }
+
     .shop-cards-section {
         display: flex;
         flex-direction: column;
@@ -386,6 +388,94 @@ body {
 
     .search-bar>p {
         font-size: 20px;
+    }
+}
+
+/*---------------------------------------------------- LIBRARY --------------------------------------------------------------------*/
+
+.library-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.library-section>h2 {
+    color: var(--main-color);
+    font-size: 68px;
+    text-align: center;
+}
+
+.library-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-titles {
+    color: #3E8A53;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.list-items {
+    color: #3E8A53;
+    font-size: 26px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.list-items:hover {
+    background-color: var(--secondary-color-50);
+}
+
+.list-items:not(:last-child) {
+    border-bottom: var(--secondary-color) 1px solid;
+}
+
+.list-titles, .list-items {
+    display: grid;
+    grid-template-columns: auto 25% 7% 20% 5%;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+.year, .downloads, .link {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .list-items {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: 
+        "title title title title title title title title"
+        "empty empty empty empty autor autor autor link";
+    }
+
+    .library-section>h2 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .list-titles, .year, .downloads {
+        display: none;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+        grid-area: title;
+    }
+
+    .autor {
+        font-size: 20px;
+        font-style: italic;
+        grid-area: autor;
+    }
+
+    .link {
+        grid-area: link;
     }
 }
 
