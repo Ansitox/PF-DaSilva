@@ -31,31 +31,41 @@
               </nav>
         </div>
     </header>
-    <div class="contact-container">
-        <section class="message-box">
+    <div class="content-container">
+        <div class="contact-content">
             <h2>Contáctanos</h2>
-            <p>Dejanos un mensaje:</p>
-            <div class="text-box">...</div>
-            <p class="send">ENVIAR</p>
-        </section>
-        <section class="contact-data">
-            <ul class="contact">
-                <li><h3>Contacto</h3></li>
-                <li><img src="../media/icons/phone.png" alt="">+598 XXXXXXXX</li>
-                <li><img src="../media/icons/mail.png" alt="">shaygreenhouse@gmail.com</li>
-                <li><img src="../media/icons/location.png" alt="">xxxxxx, xxxxxx</li>
-            </ul>
-            <ul class="social-media">
-                <li><h3>Redes sociales</h3></li>
-                <li><img src="../media/icons/facebook.png" alt="">shaygreenhouseuy</li>
-                <li><img src="../media/icons/instagram.png" alt="">shaygreenhouse</li>
-                <li><img src="../media/icons/twitter.png" alt="">shay_greenhouse</li>
-            </ul>
-            <ul class="social-media">
-                <li><h3>Visitanos</h3></li>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4541.08414111641!2d-56.168687751815625!3d-34.86989219160242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80652f7d4ba7%3A0xe87fda1ccf2813d1!2sMonumento%20a%20Luis%20Batlle%20Berres!5e0!3m2!1ses!2suy!4v1705447810019!5m2!1ses!2suy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </ul>
-        </section>
+            <form class="contact-form" action="#" method="post">
+                <h3>Dejanos un mensaje:</h3>
+                <div class="name-input">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="email-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <textarea class="message-box" placeholder="Escribenos un mensaje"></textarea>
+                <input type="submit" class="submit-input" value="ENVIAR" disabled>
+            </form>
+            <section class="contact-data">
+                <ul class="contact">
+                    <li><h3>Contacto</h3></li>
+                    <li><img src="../media/icons/phone.png" alt="">+598 XXXXXXXX</li>
+                    <li><img src="../media/icons/mail.png" alt="">shaygreenhouse@gmail.com</li>
+                    <li><img src="../media/icons/location.png" alt="">xxxxxx, xxxxxx</li>
+                </ul>
+                <ul class="social-media">
+                    <li><h3>Redes sociales</h3></li>
+                    <li><img src="../media/icons/facebook.png" alt="">shaygreenhouseuy</li>
+                    <li><img src="../media/icons/instagram.png" alt="">shaygreenhouse</li>
+                    <li><img src="../media/icons/twitter.png" alt="">shay_greenhouse</li>
+                </ul>
+                <ul class="map-section">
+                    <li><h3>Visitanos</h3></li>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4541.08414111641!2d-56.168687751815625!3d-34.86989219160242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80652f7d4ba7%3A0xe87fda1ccf2813d1!2sMonumento%20a%20Luis%20Batlle%20Berres!5e0!3m2!1ses!2suy!4v1705447810019!5m2!1ses!2suy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </ul>
+            </section>
+        </div> 
     </div>
     <footer>
         <div class="footer-container">

@@ -479,6 +479,151 @@ body {
     }
 }
 
+/*--------------------------------------------------- CONTACT ---------------------------------------------------------------------*/
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "title title"
+    "message data";
+}
+
+.contact-content>h2 {
+    color: var(--main-color);
+    font-size: 68px;
+    text-align: center;
+    grid-area: title;
+}
+
+.contact-form {
+    grid-area: message;
+}
+
+.contact-data {
+    grid-area: data;
+}
+
+.contact-form>h3 {
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.contact-form>div>label {
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.name-input, .email-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#name, #email {
+    width: 85%;
+    height: 50px;
+    background-color: #A9F291;
+    border: none;
+    border-radius: 50px;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+
+.message-box {
+    min-height: 200px;
+    max-height: 500px   ;
+    background-color: #A9F291;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.submit-input {
+    width: fit-content;
+    background-color: white;
+    border: none;
+    text-transform: uppercase;
+    align-self: flex-end;
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 600;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.submit-input:hover {
+    background-color: var(--terciary-color);
+    border-radius: 50px;
+    padding: 0 10px;
+}
+
+.contact-data>ul {
+    list-style-type: none;
+    color: var(--main-color);
+}
+
+.contact-data>ul>li>img {
+    padding-right: 10px;
+}
+
+.contact-data>ul>li:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+.map {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact, .social-media {
+        display: none;
+    }
+
+    .contact-content>h2 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .contact-form>h3 {
+        font-size: 22px;
+    }
+
+    .contact-form>div>label {
+        font-size: 16px;
+    }
+
+    .submit-input:active {
+        background-color: var(--terciary-color);
+        border-radius: 50px;
+        padding: 0 10px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-section {
+        padding: 0;
+    }
+}
+
 /*---------------------------------------------------- FOOTER ---------------------------------------------------------------------*/
 
 .footer-container {
