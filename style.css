@@ -65,6 +65,7 @@ body {
         width: 90%;
     }
 }
+
 /*---------------------------------------------------- HOME -----------------------------------------------------------------------*/
 
 .home-content {
@@ -269,6 +270,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    .plants-section>h2, .products-section>h2 {
+        font-size: 28px;
+        font-weight: 600;
+    }
     .plants-section>.card, .products-section>.card {
         display: none;
     }
@@ -287,6 +292,100 @@ body {
         background-color: var(--terciary-color);
         border-radius: 50px;
         padding: 0 10px;
+    }
+}
+
+/*----------------------------------------------------- SHOP ----------------------------------------------------------------------*/
+
+.shopping-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.shopping-buttons {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-box {
+    height: 50px;
+    background-color: #A9F291;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.shop-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shop-content>h2 {
+    color: var(--main-color);
+    font-size: 68px;
+    text-align: center;
+}
+
+.search-bar, .filter-box, .shopping-cart {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.search-bar>p, .filter-box>p {
+    margin-top: 1rem;
+    padding: 0 10px;
+    color: var(--main-color);
+}
+
+.search-bar {
+    width: 50%;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    padding: 0 10px;
+}
+
+.shopping-cart {
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.card-img-top {
+    padding-bottom: 10px;
+}
+
+.card-body h5:nth-of-type(2) {
+    color: var(--secondary-color);
+}
+
+.shop-cards-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .shop-content>h2 {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .shop-cards-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .filter-box>p {
+        display: none;
+    }
+
+    .search-bar>p {
+        font-size: 20px;
     }
 }
 
