@@ -591,9 +591,10 @@ body {
         display: none;
     }
 
-    .contact-content>h2 {
+    .contact-content>h2, .map-section>li>h3 {
         font-size: 28px;
         font-weight: 600;
+        text-align: center;
     }
 
     .contact-form>h3 {
@@ -601,6 +602,10 @@ body {
     }
 
     .contact-form>div>label {
+        font-size: 16px;
+    }
+
+    .submit-input {
         font-size: 16px;
     }
 
