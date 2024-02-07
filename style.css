@@ -50,6 +50,21 @@ body {
     margin: 50px 0;
 }
 
+@media only screen and (max-width: 768px) {
+    .content-container {
+        width: 100%;
+    }
+
+    .home-content>section, .section-1-text, .section-2-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-main>p, .section-1-text>p, .section-2-text>p {
+        width: 90%;
+    }
+}
 /*---------------------------------------------------- HOME -----------------------------------------------------------------------*/
 
 .home-content {
@@ -152,227 +167,128 @@ body {
     }
     
 }
+/*-------------------------------------------------- PRODUCTS ----------------------------------------------------------------------*/
 
-/* .main-section>h1, .section>h2, .products-section>h2, .message-box>h2 {
-    text-align: center;
-    padding-bottom: 30px;
+.plants-section {
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "card1 card2 card3"
+    "card4 card5 card6";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    gap: 1rem;
+}
+
+.plants-section>h2 {
+    grid-area: title;
     color: var(--main-color);
-}
-
-.main-section>h1, .products-section>h2 {
     font-size: 68px;
-    font-weight: 700;
-}
-
-.section>h2, .message-box>h2 {
-    font-size: 55px;
-}
-
-.main-section, .section {
     text-align: center;
-    font-size: 24px;
 }
 
-#section-2 {
-    position: absolute;
-    left: 60%;
-    top: 0;
+.plants-section:nth-child(2) {
+    grid-area: card1;
 }
 
-.main-section {
-    position: relative;
-    left: 10%;
-    width: 80%;
-    padding-bottom: 50px;
-    border-bottom: var(--main-color) 20px solid;
-    margin-bottom: 50px;
+.plants-section:nth-child(3) {
+    grid-area: card2;
 }
 
-.section-container {
-    position: relative;
-    left: 10%;
-    width: 80%;
+.plants-section:nth-child(4) {
+    grid-area: card3;
 }
 
-.section {
-    width: 40%;
+.plants-section:nth-child(5) {
+    grid-area: card4;
 }
 
-.section>img {
-    width: 70%;
-    padding: 20px 0;
+.plants-section:nth-child(6) {
+    grid-area: card5;
 }
 
-.products-container {
-    font-size: 16px;
-    font-weight: 500;
+.plants-section:nth-child(7) {
+    grid-area: card6;
 }
 
-.product {
+.products-section {
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "card1 card2 card3";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+}
+
+.products-section>h2 {
+    grid-area: title;
+    color: var(--main-color);
+    font-size: 68px;
     text-align: center;
-    width: 30%;
-    display: inline-block;
-    padding: 20px 1.5%;
 }
 
-.product>h3, .product>h4 {
+.products-section:nth-child(2) {
+    grid-area: card1;
+}
+
+.products-section:nth-child(3) {
+    grid-area: card2;
+}
+
+.products-section:nth-child(4) {
+    grid-area: card3;
+}
+
+.card-img-top {
+    min-height: 300px;
+    max-height: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body>h5, .card-body>a {
     color: var(--main-color);
     text-transform: uppercase;
-    font-size: 16px;
-    padding: 15px 0;
-}
-
-.product>h3 {
-    font-weight: 700;
-}
-
-.product>h4 {
     font-weight: 600;
+    text-decoration: none;
 }
 
-.product>img {
-    width: 60%;
-}
-
-.shopping-bar, .library-bar {
-    height: 50px;
-}
-
-.search-bar {
-    width: 40%;
-    height: 50px;
-    background-color: var(--secondary-color);
+.card-body>a:hover {
+    background-color: var(--terciary-color);
     border-radius: 50px;
     padding: 0 10px;
 }
 
-.search-bar>p, .filter-box>p {
-    display: inline;
-    font-size: 25px;
-    color: var(--main-color);
-    font-weight: 500;
-    padding-left: 20px;
-    position: relative;
-    bottom: 15px;
+.plants-section>.carousel, .products-section>.carousel {
+    display: none;
 }
 
-.filter-box {
-    position: relative;
-    left: 75%;
-    top: -50px;
-    width: 15%;
-    height: 50px;
-    background-color: var(--secondary-color);
-    border-radius: 50px;
-}
+@media only screen and (max-width: 768px) {
+    .plants-section>.card, .products-section>.card {
+        display: none;
+    }
 
-.filter-box>img, .shopping-cart>img {
-    width: 50px;
-    height: 50px;
-}
+    .plants-section, .products-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.shopping-cart {
-    position: relative;
-    left: 90%;
-    top: -100px;
-}
+    .plants-section>.carousel, .products-section>.carousel {
+        display: flex;
+    }
 
-.titles {
-    list-style-type: none;
-    color: var(--main-color);
-    font-size: 40px;
-    font-weight: 700;
-    padding-top: 10px;
+    .card-body>a:active {
+        background-color: var(--terciary-color);
+        border-radius: 50px;
+        padding: 0 10px;
+    }
 }
-
-.items {
-    list-style-type: none;
-    color: var(--main-color);
-    font-size: 30px;
-    font-weight: 400;
-    padding-top: 10px;
-}
-
-.title {
-    width: 35%;
-}
-
-.autor {
-    width: 23%;
-}
-
-.year {
-    width: 6%;
-}
-
-.downloads {
-    width: 20%;
-}
-
-.link {
-    width: 9%;
-}
-
-.year, .downloads, .link {
-    text-align: center;
-}
-
-.titles>div, .items>div {
-    display: inline-block;
-}
-
-.library-list {
-    padding: 50px;
-}
-
-.contact-container {
-    width: 80%;
-    padding: 0 10%;
-}
-
-.message-box {
-    position: relative;
-    bottom: 150px;
-    display: inline-block;
-    width: 65%;
-    padding: 20px 0;
-}
-.message-box>div {
-    width: 90%;
-    padding: 0 5%;
-    background-color: var(--secondary-color);
-    border-radius: 20px;
-    height: 300px;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.message-box>p {
-    font-size: 30px;
-    font-weight: 600;
-    padding: 10px 0;
-}
-
-.send {
-    text-align: end;
-}
-
-.contact-data {
-    width: 30%;
-    display: inline-block;
-    padding: 0 2%;
-}
-
-.contact, .social-media {
-    list-style-type: none;
-    color: var(--main-color);
-}
-
-.social-media>iframe {
-    width: 100%;
-    height: 300px;
-    border-radius: 20px;
-} */
 
 /*---------------------------------------------------- FOOTER ---------------------------------------------------------------------*/
 
