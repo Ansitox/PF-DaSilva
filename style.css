@@ -155,7 +155,7 @@ body {
     }
 
     .home-content {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .home-section-1, .home-section-2 {
@@ -190,6 +190,7 @@ body {
 .plants-section-title {
     grid-area: title;
     text-align: center;
+    font-size: 24px;
 }
 
 .plants-section-title>h2 {
@@ -234,6 +235,7 @@ body {
 .products-section-title {
     grid-area: title;
     text-align: center;
+    font-size: 24px;
 }
 
 .products-section-title>h2 {
@@ -280,10 +282,15 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    .plants-section>h2, .products-section>h2 {
+    .plants-section-title>p, .products-section-title>p {
+        font-size: 18px;
+    }
+
+    .plants-section-title>h2, .products-section-title>h2 {
         font-size: 28px;
         font-weight: 600;
     }
+
     .plants-section>.card, .products-section>.card {
         display: none;
     }
