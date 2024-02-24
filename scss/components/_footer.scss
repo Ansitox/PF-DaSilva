@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--main-color);
+    background-color: map-get($colors, main);
 }
 
 .info-container {
@@ -26,7 +26,7 @@
 .info-container>ul>li>h3 {
     font-size: 30px;
     text-transform: uppercase;
-    color: var(--terciary-color);
+    color: map-get($colors, terciary);
 }
 
 .info-container>ul>li>img {
@@ -49,7 +49,7 @@
     justify-content: center;
     align-items: center;
     height: 50px;
-    background-color: var(--secondary-color);
+    background-color: map-get($colors, secondary);
 }
 
 @media only screen and (max-width: 768px) {
@@ -82,7 +82,7 @@
     }
 
     .media-icons>a:active {
-        background-color: var(--secondary-color);
+        background-color: map-get($colors, secondary);
         border-radius: 50px;
     }
 }

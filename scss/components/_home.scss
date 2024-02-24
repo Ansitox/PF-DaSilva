@@ -10,7 +10,7 @@
     width: 50%;
     align-self: center;
     padding-bottom: 20px;
-    border-bottom: var(--main-color) 2px solid;
+    border-bottom: map-get($colors, main) 2px solid;
 }
 
 .home-main {
@@ -49,7 +49,7 @@
 }
 
 .home-main>h1, .section-1-text>h2, .section-2-text>h2 {
-    color: var(--main-color);
+    color: map-get($colors, main);
 }
 
 .home-section-1 {
@@ -94,8 +94,8 @@
     }
 
     .home-section-1 {
-        border-top: var(--secondary-color) 5px solid;
-        border-bottom: var(--secondary-color) 5px solid;
+        border-top: map-get($colors, secondary) 5px solid;
+        border-bottom: map-get($colors, secondary) 5px solid;
         margin: 20px 0;
     }
     

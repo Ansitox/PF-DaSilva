@@ -7,7 +7,7 @@
 }
 
 .library-section>h2 {
-    color: var(--main-color);
+    color: map-get($colors, main);
     font-size: 68px;
     text-align: center;
 }
@@ -18,24 +18,24 @@
 }
 
 .list-titles {
-    color: #3E8A53;
+    color: map-get($colors, main);
     font-size: 30px;
     font-weight: 700;
 }
 
 .list-items {
-    color: #3E8A53;
+    color: map-get($colors, main);
     font-size: 26px;
     font-weight: 400;
     padding-top: 10px;
 }
 
 .list-items:hover {
-    background-color: var(--secondary-color-50);
+    background-color: map-get($colors, secondary-50);
 }
 
 .list-items:not(:last-child) {
-    border-bottom: var(--secondary-color) 1px solid;
+    border-bottom: map-get($colors, secondary) 1px solid;
 }
 
 .list-titles, .list-items {

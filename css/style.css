@@ -1,3 +1,4 @@
+/*COLORES*/
 /*---------------------------------------------------- HEADER ---------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 .logo-img {
@@ -11,16 +12,16 @@
   width: 100%;
   z-index: 10;
   height: 120px;
-  background-color: var(--main-color);
+  background-color: #3E8A53;
 }
 
 .container-fluid {
   font-size: 30px;
-  background-color: var(--main-color);
+  background-color: #3E8A53;
 }
 
 .nav-item > a:hover {
-  color: var(--secondary-color);
+  background-color: #3E8A53;
 }
 
 #header-button.navbar-toggler {
@@ -38,7 +39,7 @@
   width: 50%;
   align-self: center;
   padding-bottom: 20px;
-  border-bottom: var(--main-color) 2px solid;
+  border-bottom: #3E8A53 2px solid;
 }
 
 .home-main {
@@ -77,7 +78,7 @@
 }
 
 .home-main > h1, .section-1-text > h2, .section-2-text > h2 {
-  color: var(--main-color);
+  color: #3E8A53;
 }
 
 .home-section-1 {
@@ -115,8 +116,8 @@
     width: 100%;
   }
   .home-section-1 {
-    border-top: var(--secondary-color) 5px solid;
-    border-bottom: var(--secondary-color) 5px solid;
+    border-top: #A9F291 5px solid;
+    border-bottom: #A9F291 5px solid;
     margin: 20px 0;
   }
 }
@@ -136,7 +137,7 @@
 }
 
 .plants-section-title > h2 {
-  color: var(--main-color);
+  color: #3E8A53;
   font-size: 68px;
 }
 
@@ -179,7 +180,7 @@
 }
 
 .products-section-title > h2 {
-  color: var(--main-color);
+  color: #3E8A53;
   font-size: 68px;
 }
 
@@ -205,14 +206,14 @@
 }
 
 .card-body > h5, .card-body > a {
-  color: var(--main-color);
+  color: #3E8A53;
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;
 }
 
 .card-body > a:hover {
-  background-color: var(--terciary-color);
+  background-color: #F4EE91;
   border-radius: 50px;
   padding: 0 10px;
 }
@@ -241,7 +242,7 @@
     display: flex;
   }
   .card-body > a:active {
-    background-color: var(--terciary-color);
+    background-color: #F4EE91;
     border-radius: 50px;
     padding: 0 10px;
   }
@@ -273,7 +274,7 @@
 }
 
 .shop-content > h2 {
-  color: var(--main-color);
+  color: #3E8A53;
   font-size: 68px;
   text-align: center;
 }
@@ -287,19 +288,19 @@
 .search-bar > p, .filter-box > p {
   margin-top: 1rem;
   padding: 0 10px;
-  color: var(--main-color);
+  color: #3E8A53;
 }
 
 .search-bar {
   width: 50%;
   height: 50px;
-  background-color: var(--secondary-color);
+  background-color: #A9F291;
   border-radius: 50px;
   padding: 0 10px;
 }
 
 .shopping-cart {
-  background-color: var(--secondary-color);
+  background-color: #A9F291;
   border-radius: 50px;
   height: 50px;
   padding: 10px;
@@ -311,7 +312,7 @@
 }
 
 .card-body h5:nth-of-type(2) {
-  color: var(--secondary-color);
+  color: #A9F291;
 }
 
 .shop-cards-section {
@@ -345,7 +346,7 @@
 }
 
 .library-section > h2 {
-  color: var(--main-color);
+  color: #3E8A53;
   font-size: 68px;
   text-align: center;
 }
@@ -369,11 +370,11 @@
 }
 
 .list-items:hover {
-  background-color: var(--secondary-color-50);
+  background-color: rgba(169, 242, 145, 0.3137254902);
 }
 
 .list-items:not(:last-child) {
-  border-bottom: var(--secondary-color) 1px solid;
+  border-bottom: #A9F291 1px solid;
 }
 
 .list-titles, .list-items {
@@ -416,32 +417,18 @@
     grid-area: link;
   }
 }
+/*COLORES*/
 /*--------------------------------------------------- CONTACT ---------------------------------------------------------------------*/
 .contact-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-areas: "title title" "message data";
 }
-
-.contact-content > h2 {
-  color: var(--main-color);
+.contact-content h2 {
+  color: #3E8A53;
   font-size: 68px;
   text-align: center;
   grid-area: title;
-}
-
-.contact-form {
-  grid-area: message;
-}
-
-.contact-data {
-  grid-area: data;
-}
-
-.contact-form > h3 {
-  color: var(--main-color);
-  font-size: 30px;
-  font-weight: 600;
 }
 
 .contact-form {
@@ -449,11 +436,16 @@
   flex-direction: column;
   justify-content: center;
   width: 90%;
+  grid-area: message;
 }
-
-.contact-form > div > label {
+.contact-form h3 {
+  color: #3E8A53;
+  font-size: 30px;
+  font-weight: 600;
+}
+.contact-form div label {
   font-size: 20px;
-  color: var(--main-color);
+  color: #3E8A53;
 }
 
 .name-input, .email-input {
@@ -489,28 +481,28 @@
   text-transform: uppercase;
   align-self: flex-end;
   font-size: 20px;
-  color: var(--main-color);
+  color: #3E8A53;
   font-weight: 600;
   padding: 0 10px;
   margin: 10px 0;
 }
-
 .submit-input:hover {
-  background-color: var(--terciary-color);
+  background-color: #F4EE91;
   border-radius: 50px;
   padding: 0 10px;
 }
 
-.contact-data > ul {
-  list-style-type: none;
-  color: var(--main-color);
+.contact-data {
+  grid-area: data;
 }
-
-.contact-data > ul > li > img {
+.contact-data ul {
+  list-style-type: none;
+  color: #3E8A53;
+}
+.contact-data ul li img {
   padding-right: 10px;
 }
-
-.contact-data > ul > li:not(:last-child) {
+.contact-data ul li:not(:last-child) {
   padding-bottom: 10px;
 }
 
@@ -529,17 +521,17 @@
     font-weight: 600;
     text-align: center;
   }
-  .contact-form > h3 {
+  .contact-form h3 {
     font-size: 22px;
   }
-  .contact-form > div > label {
+  .contact-form div label {
     font-size: 16px;
   }
   .submit-input {
     font-size: 16px;
   }
   .submit-input:active {
-    background-color: var(--terciary-color);
+    background-color: #F4EE91;
     border-radius: 50px;
     padding: 0 10px;
   }
@@ -559,7 +551,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: var(--main-color);
+  background-color: #3E8A53;
 }
 
 .info-container {
@@ -581,7 +573,7 @@
 .info-container > ul > li > h3 {
   font-size: 30px;
   text-transform: uppercase;
-  color: var(--terciary-color);
+  color: #F4EE91;
 }
 
 .info-container > ul > li > img {
@@ -604,7 +596,7 @@
   justify-content: center;
   align-items: center;
   height: 50px;
-  background-color: var(--secondary-color);
+  background-color: #A9F291;
 }
 
 @media only screen and (max-width: 768px) {
@@ -631,7 +623,7 @@
     padding: 10px;
   }
   .media-icons > a:active {
-    background-color: var(--secondary-color);
+    background-color: #A9F291;
     border-radius: 50px;
   }
 }

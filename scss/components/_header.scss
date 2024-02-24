@@ -1,3 +1,5 @@
+@import '../base/variables';
+
 /*---------------------------------------------------- HEADER ---------------------------------------------------------------------*/
 
 .logo-img {
@@ -11,16 +13,16 @@
     width: 100%;
     z-index: 10;
     height: 120px;
-    background-color: var(--main-color);
+    background-color: map-get($colors, main);
 }
 
 .container-fluid {
     font-size: 30px;
-    background-color: var(--main-color);
+    background-color: map-get($colors, main);
 }
 
 .nav-item>a:hover {
-    color: var(--secondary-color);
+    background-color: map-get($colors, main);
 }
 
 #header-button.navbar-toggler {
