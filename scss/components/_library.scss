@@ -12,12 +12,21 @@
     h2 {
         @extend .titles;
         text-align: center;
+        @media only screen and (max-width: 768px) {
+            font-size: 28px;
+            font-weight: 600;
+        }
     }
 }
 
 .library-list {
     display: flex;
     flex-direction: column;
+}
+
+.list-titles, .list-items {
+    display: grid;
+    grid-template-columns: auto 25% 7% 20% 5%;
 }
 
 .list-titles {
@@ -37,54 +46,44 @@
     &:not(:last-child) {
         border-bottom: map-get($colors, secondary) 1px solid;
     }
-}
-
-.list-titles, .list-items {
-    display: grid;
-    grid-template-columns: auto 25% 7% 20% 5%;
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: 
+        "title title title title title title title title"
+        "empty empty empty empty autor autor autor link";
+    }
 }
 
 .link {
     display: flex;
     justify-content: center;
+    @media only screen and (max-width: 768px) {
+        grid-area: link;
+    }
 }
 
 .year, .downloads, .link {
     text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-    .list-items {
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-areas: 
-        "title title title title title title title title"
-        "empty empty empty empty autor autor autor link";
-    }
-
-    .library-section {
-        h2 {
-            font-size: 28px;
-            font-weight: 600;
-        }
-    }
-
-    .list-titles, .year, .downloads {
+.list-titles, .year, .downloads {
+    @media only screen and (max-width: 768px) {
         display: none;
     }
+}
 
-    .title {
+.title {
+    @media only screen and (max-width: 768px) {
         font-size: 20px;
         font-weight: 600;
         grid-area: title;
     }
+}
 
-    .autor {
+.autor {
+    @media only screen and (max-width: 768px) {
         font-size: 20px;
         font-style: italic;
         grid-area: autor;
-    }
-
-    .link {
-        grid-area: link;
     }
 }

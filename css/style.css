@@ -38,12 +38,22 @@
   flex-direction: column;
   font-size: 24px;
 }
+@media only screen and (max-width: 768px) {
+  .home-content {
+    font-size: 16px;
+  }
+}
 
 .home-title {
   width: 50%;
   align-self: center;
   padding-bottom: 20px;
   border-bottom: #3E8A53 2px solid;
+}
+@media only screen and (max-width: 768px) {
+  .home-title {
+    display: none;
+  }
 }
 
 .home-main {
@@ -52,6 +62,11 @@
 .home-main h1 {
   text-align: center;
   font-weight: 600;
+}
+@media only screen and (max-width: 768px) {
+  .home-main h1 {
+    font-size: 28px;
+  }
 }
 
 .img-main-section {
@@ -64,6 +79,11 @@
 .img-main-section img {
   width: 25%;
 }
+@media only screen and (max-width: 768px) {
+  .img-main-section img {
+    width: 30%;
+  }
+}
 
 .home-section-1, .home-section-2 {
   display: flex;
@@ -72,9 +92,27 @@
   width: 50%;
   align-self: center;
 }
+@media only screen and (max-width: 768px) {
+  .home-section-1 img, .home-section-2 img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .home-section-1, .home-section-2 {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .home-section-1 {
   padding: 20px 0;
+}
+@media only screen and (max-width: 768px) {
+  .home-section-1 {
+    border-top: #A9F291 5px solid;
+    border-bottom: #A9F291 5px solid;
+    margin: 20px 0;
+  }
 }
 
 .home-section-2 {
@@ -86,34 +124,11 @@
   align-self: center;
 }
 @media only screen and (max-width: 768px) {
-  .home-title {
-    display: none;
-  }
-  .home-main h1 {
-    font-size: 28px;
-  }
-  .img-main-section img {
-    width: 30%;
-  }
   .section-1-text h2, .section-2-text h2 {
     font-size: 24px;
   }
-  .home-content {
-    font-size: 16px;
-  }
-  .home-section-1, .home-section-2 {
-    flex-direction: column;
-    text-align: center;
-  }
-  .home-section-1 img, .home-section-2 img {
-    width: 100%;
-  }
-  .home-section-1 {
-    border-top: #A9F291 5px solid;
-    border-bottom: #A9F291 5px solid;
-    margin: 20px 0;
-  }
 }
+
 .titles, .contact-content h2, .library-section h2, .shop-content h2, .products-section-title h2, .plants-section-title h2, .home-main h1, .section-1-text h2, .section-2-text h2 {
   color: #3E8A53;
   font-size: 68px;
@@ -333,10 +348,21 @@
 .library-section h2 {
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  .library-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
 
 .library-list {
   display: flex;
   flex-direction: column;
+}
+
+.list-titles, .list-items {
+  display: grid;
+  grid-template-columns: auto 25% 7% 20% 5%;
 }
 
 .list-titles {
@@ -357,15 +383,21 @@
 .list-items:not(:last-child) {
   border-bottom: #A9F291 1px solid;
 }
-
-.list-titles, .list-items {
-  display: grid;
-  grid-template-columns: auto 25% 7% 20% 5%;
+@media only screen and (max-width: 768px) {
+  .list-items {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "title title title title title title title title" "empty empty empty empty autor autor autor link";
+  }
 }
 
 .link {
   display: flex;
   justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .link {
+    grid-area: link;
+  }
 }
 
 .year, .downloads, .link {
@@ -373,31 +405,27 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .list-items {
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: "title title title title title title title title" "empty empty empty empty autor autor autor link";
-  }
-  .library-section h2 {
-    font-size: 28px;
-    font-weight: 600;
-  }
   .list-titles, .year, .downloads {
     display: none;
   }
+}
+
+@media only screen and (max-width: 768px) {
   .title {
     font-size: 20px;
     font-weight: 600;
     grid-area: title;
   }
+}
+
+@media only screen and (max-width: 768px) {
   .autor {
     font-size: 20px;
     font-style: italic;
     grid-area: autor;
   }
-  .link {
-    grid-area: link;
-  }
 }
+
 .titles, .contact-content h2, .home-main h1, .section-1-text h2, .section-2-text h2, .plants-section-title h2, .products-section-title h2, .shop-content h2, .library-section h2 {
   color: #3E8A53;
   font-size: 68px;
