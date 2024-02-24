@@ -56,7 +56,7 @@
 .section-1-text, .section-2-text {
     align-self: center;
     h2 {
-        @extend .titles
+        @extend .titles;
     }
 }
 

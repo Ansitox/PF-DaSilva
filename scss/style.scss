@@ -1,3 +1,5 @@
+@import './base/variables';
+
 @import './components/header';
 @import './components/home';
 @import './components/products';
@@ -27,13 +29,31 @@ body {
     align-self: center;
     padding-top: 120px;
     margin: 50px 0;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.wapp {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    img {
+        width: 75px;
+        height: 75px;
+        padding: 10px;
+        background-color: map-get($colors, main);
+        border-radius: 50%;
+        animation: pulse 4s linear infinite;
+    }
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    .content-container {
-        width: 100%;
-    }
-
     .home-content>section, .section-1-text, .section-2-text {
         display: flex;
         flex-direction: column;
@@ -44,5 +64,33 @@ body {
         p {
             width: 90%;
         }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 
+        0 0 0 0 #A9F291, 
+        0 0 0 0 #A9F291;
+    }
+    25% {
+        box-shadow: 
+        0 0 0 10px #A9F29120, 
+        0 0 0 5px #A9F29120;
+    }
+    50% {
+        box-shadow: 
+        0 0 0 20px #A9F29120, 
+        0 0 0 0 #A9F291;
+    }
+    75% {
+        box-shadow: 
+        0 0 0 20px #A9F29120, 
+        0 0 0 10px #A9F29120;
+    }
+    100% {
+        box-shadow: 
+        0 0 0 20px #A9F29120, 
+        0 0 0 10px #A9F29120;
     }
 }
