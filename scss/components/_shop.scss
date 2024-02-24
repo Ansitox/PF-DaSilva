@@ -23,12 +23,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.shop-content>h2 {
-    color: map-get($colors, main);
-    font-size: 68px;
-    text-align: center;
+    h2 {
+        color: map-get($colors, main);
+        font-size: 68px;
+        text-align: center;
+    }
 }
 
 .search-bar, .filter-box, .shopping-cart {
@@ -37,10 +36,12 @@
     font-size: 25px;
 }
 
-.search-bar>p, .filter-box>p {
-    margin-top: 1rem;
-    padding: 0 10px;
-    color: map-get($colors, main);
+.search-bar, .filter-box {
+    p {
+        margin-top: 1rem;
+        padding: 0 10px;
+        color: map-get($colors, main);
+    }
 }
 
 .search-bar {
@@ -63,8 +64,12 @@
     padding-bottom: 10px;
 }
 
-.card-body h5:nth-of-type(2) {
-    color: map-get($colors, secondary);
+.card-body {
+    h5 {
+        &:nth-of-type(2) {
+            color: map-get($colors, secondary);
+        }
+    }
 }
 
 .shop-cards-section {
@@ -74,9 +79,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .shop-content>h2 {
-        font-size: 28px;
-        font-weight: 600;
+    .shop-content {
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+        }
     }
 
     .shop-cards-section {
@@ -85,11 +92,15 @@
         justify-content: center;
     }
 
-    .filter-box>p {
-        display: none;
+    .filter-box {
+        p {
+            display: none;
+        }
     }
 
-    .search-bar>p {
-        font-size: 20px;
+    .search-bar {
+        p {
+            font-size: 20px;
+        }
     }
 }

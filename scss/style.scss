@@ -47,7 +47,9 @@ body {
         align-items: center;
     }
 
-    .home-main>p, .section-1-text>p, .section-2-text>p {
-        width: 90%;
+    .home-main, .section-1-text, .section-2-text {
+        p {
+            width: 90%;
+        }
     }
 }

@@ -6,10 +6,12 @@
     margin-bottom: 20px;
 }
 
-.library-section>h2 {
-    color: map-get($colors, main);
-    font-size: 68px;
-    text-align: center;
+.library-section {
+    h2 {
+        color: map-get($colors, main);
+        font-size: 68px;
+        text-align: center;
+    }
 }
 
 .library-list {
@@ -28,14 +30,12 @@
     font-size: 26px;
     font-weight: 400;
     padding-top: 10px;
-}
-
-.list-items:hover {
-    background-color: map-get($colors, secondary-50);
-}
-
-.list-items:not(:last-child) {
-    border-bottom: map-get($colors, secondary) 1px solid;
+    &:hover {
+        background-color: map-get($colors, secondary-50);
+    }
+    &:not(:last-child) {
+        border-bottom: map-get($colors, secondary) 1px solid;
+    }
 }
 
 .list-titles, .list-items {
@@ -60,9 +60,11 @@
         "empty empty empty empty autor autor autor link";
     }
 
-    .library-section>h2 {
-        font-size: 28px;
-        font-weight: 600;
+    .library-section {
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+        }
     }
 
     .list-titles, .year, .downloads {

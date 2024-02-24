@@ -9,41 +9,37 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr 1fr;
     gap: 1rem;
+    .carousel {
+        display: none;
+    }
 }
 
 .plants-section-title {
     grid-area: title;
     text-align: center;
     font-size: 24px;
-}
-
-.plants-section-title>h2 {
-    color: map-get($colors, main);
-    font-size: 68px;
-}
-
-.plants-section:nth-child(2) {
-    grid-area: card1;
-}
-
-.plants-section:nth-child(3) {
-    grid-area: card2;
-}
-
-.plants-section:nth-child(4) {
-    grid-area: card3;
-}
-
-.plants-section:nth-child(5) {
-    grid-area: card4;
-}
-
-.plants-section:nth-child(6) {
-    grid-area: card5;
-}
-
-.plants-section:nth-child(7) {
-    grid-area: card6;
+    h2 {
+        color: map-get($colors, main);
+        font-size: 68px;
+    }
+    &:nth-child(2) {
+        grid-area: card1;
+    }
+    &:nth-child(3) {
+        grid-area: card2;
+    }
+    &:nth-child(4) {
+        grid-area: card3;
+    }
+    &:nth-child(5) {
+        grid-area: card4;
+    }
+    &:nth-child(6) {
+        grid-area: card5;
+    }
+    &:nth-child(7) {
+        grid-area: card6;
+    }
 }
 
 .products-section {
@@ -54,29 +50,28 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr;
     gap: 1rem;
+    &:nth-child(2) {
+        grid-area: card1;
+    }
+    &:nth-child(3) {
+        grid-area: card2;
+    }
+    &:nth-child(4) {
+        grid-area: card3;
+    }
+    .carousel {
+        display: none;
+    }
 }
 
 .products-section-title {
     grid-area: title;
     text-align: center;
     font-size: 24px;
-}
-
-.products-section-title>h2 {
-    color: map-get($colors, main);
-    font-size: 68px;
-}
-
-.products-section:nth-child(2) {
-    grid-area: card1;
-}
-
-.products-section:nth-child(3) {
-    grid-area: card2;
-}
-
-.products-section:nth-child(4) {
-    grid-area: card3;
+    h2 {
+        color: map-get($colors, main);
+        font-size: 68px;
+    }
 }
 
 .card-img-top {
@@ -86,33 +81,30 @@
 
 .card-body {
     text-align: center;
-}
-
-.card-body>h5, .card-body>a {
-    color: map-get($colors, main);
-    text-transform: uppercase;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.card-body>a:hover {
-    background-color: map-get($colors, terciary);
-    border-radius: 50px;
-    padding: 0 10px;
-}
-
-.plants-section>.carousel, .products-section>.carousel {
-    display: none;
+    h5, a {
+        color: map-get($colors, main);
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    a {
+        &:hover {
+            background-color: map-get($colors, terciary);
+            border-radius: 50px;
+            padding: 0 10px;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
-    .plants-section-title>p, .products-section-title>p {
-        font-size: 18px;
-    }
-
-    .plants-section-title>h2, .products-section-title>h2 {
-        font-size: 28px;
-        font-weight: 600;
+    .plants-section-title, .products-section-title {
+        p {
+            font-size: 18px;
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+        }
     }
 
     .plants-section>.card, .products-section>.card {
@@ -123,15 +115,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        .carousel {
+            display: flex;
+        }
     }
 
-    .plants-section>.carousel, .products-section>.carousel {
-        display: flex;
-    }
-
-    .card-body>a:active {
-        background-color: map-get($colors, terciary);
-        border-radius: 50px;
-        padding: 0 10px;
+    .card-body {
+        a {
+            &:active {
+                background-color: map-get($colors, terciary);
+                border-radius: 50px;
+                padding: 0 10px;
+            }
+        }
     }
 }
