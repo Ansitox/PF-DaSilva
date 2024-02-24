@@ -1,3 +1,5 @@
+@import '../base/extends';
+
 /*---------------------------------------------------- LIBRARY --------------------------------------------------------------------*/
 
 .library-bar {
@@ -8,8 +10,7 @@
 
 .library-section {
     h2 {
-        color: map-get($colors, main);
-        font-size: 68px;
+        @extend .titles;
         text-align: center;
     }
 }

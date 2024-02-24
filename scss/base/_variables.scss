@@ -1,8 +1,19 @@
-/*COLORES*/
-
 $colors: (
     main: #3E8A53,
     secondary: #A9F291,
     secondary-50: #A9F29150,
     terciary: #F4EE91
-)
+);
+
+$tipography: (
+    desktop: (
+        titles: (
+            font-size: 68px,
+            color: map-get($colors, main),
+            main-title-w: 600
+        ),
+        text: (
+            font-size: 24px,
+        )
+    )
+);

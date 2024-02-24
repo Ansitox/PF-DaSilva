@@ -1,9 +1,12 @@
+@import '../base/variables';
+@import '../base/extends';
+
 /*---------------------------------------------------- HOME -----------------------------------------------------------------------*/
 
 .home-content {
     display: flex;
     flex-direction: column;
-    font-size: 24px;
+    font-size: map-get(map-get(map-get($tipography, desktop), text), font-size);
 }
 
 .home-title {
@@ -16,9 +19,9 @@
 .home-main {
     text-align: center;
     h1 {
-        font-size: 68px;
+        @extend .titles;
         text-align: center;
-        color: map-get($colors, main);
+        font-weight: map-get(map-get(map-get($tipography, desktop), titles), main-title-w);
     }
 }
 
@@ -53,8 +56,7 @@
 .section-1-text, .section-2-text {
     align-self: center;
     h2 {
-        font-size: 55px;
-        color: map-get($colors, main);
+        @extend .titles
     }
 }
 
