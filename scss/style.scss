@@ -1,0 +1,53 @@
+@import './components/header';
+@import './components/home';
+@import './components/products';
+@import './components/shop';
+@import './components/library';
+@import './components/contact';
+@import './components/footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: #3E8A53;
+    --secondary-color: #A9F291;
+    --secondary-color-50: #A9F29150;
+    --terciary-color: #F4EE91;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------------------------------------------- CONTENT CONTAINER ----------------------------------------------------------------*/
+
+.content-container {
+    width: 90%;
+    align-self: center;
+    padding-top: 120px;
+    margin: 50px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-container {
+        width: 100%;
+    }
+
+    .home-content>section, .section-1-text, .section-2-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-main>p, .section-1-text>p, .section-2-text>p {
+        width: 90%;
+    }
+}

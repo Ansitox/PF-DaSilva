@@ -1,0 +1,28 @@
+/*---------------------------------------------------- HEADER ---------------------------------------------------------------------*/
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+.nav-container {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 120px;
+    background-color: var(--main-color);
+}
+
+.container-fluid {
+    font-size: 30px;
+    background-color: var(--main-color);
+}
+
+.nav-item>a:hover {
+    color: var(--secondary-color);
+}
+
+#header-button.navbar-toggler {
+    border: none;
+}
