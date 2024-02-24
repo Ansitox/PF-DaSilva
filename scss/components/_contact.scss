@@ -9,30 +9,47 @@
     grid-template-areas: 
     "title title"
     "message data";
-
     h2 {
         @extend .titles;
         text-align: center;
         grid-area: title;
+        @media only screen and (max-width: 768px) {
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+            } 
     }
+    @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    } 
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    align-self: center;
     grid-area: message;
     h3 {
         color: map-get($colors, main);
         font-size: 28px;
+        @media only screen and (max-width: 768px) {
+            font-size: 22px;
+        }  
     }
     div {
         label {
             font-size: 20px;
-            color: map-get($colors, main);        
+            color: map-get($colors, main);
+            @media only screen and (max-width: 768px) {
+                font-size: 16px;
+            }  
         }
     }
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+    } 
 }
 
 .name-input, .email-input {
@@ -72,12 +89,21 @@
     font-weight: 600;
     padding: 0 10px;
     margin: 10px 0;
-
     &:hover {
         background-color: map-get($colors, terciary);
         border-radius: 50px;
         padding: 0 10px;
     }
+    &:active {
+        @media only screen and (max-width: 768px) {
+            background-color: map-get($colors, terciary);
+            border-radius: 50px;
+            padding: 0 10px;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 16px;
+    } 
 }
 
 .contact-data {
@@ -102,47 +128,23 @@
     border-radius: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-    .contact, .social-media {
+.contact, .social-media {
+    @media only screen and (max-width: 768px) {
         display: none;
-    }
+    } 
+}
 
-    .contact-content>h2, .map-section>li>h3 {
-        font-size: 28px;
-        font-weight: 600;
-        text-align: center;
-    }
-
-    .contact-form {
+.map-section {
+    li {
         h3 {
-            font-size: 22px;
-        }
-        div {
-            label {
-                font-size: 16px;
+            @media only screen and (max-width: 768px) {
+                font-size: 28px;
+                font-weight: 600;
+                text-align: center;
             }
         }
     }
-
-    .submit-input {
-        font-size: 16px;
-        &:active {
-            background-color: map-get($colors, terciary);
-            border-radius: 50px;
-            padding: 0 10px;
-        }
-    }
-
-    .contact-form {
-        width: 100%;
-    }
-
-    .contact-content {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .map-section {
+    @media only screen and (max-width: 768px) {
         padding: 0;
     }
 }
