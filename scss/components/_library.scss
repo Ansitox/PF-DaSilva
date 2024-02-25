@@ -36,10 +36,10 @@
 }
 
 .list-items {
+    padding-top: 10px;
     color: map-get($colors, main);
     font-size: 26px;
     font-weight: 400;
-    padding-top: 10px;
     &:hover {
         background-color: map-get($colors, secondary-50);
     }
@@ -74,16 +74,16 @@
 
 .title {
     @media only screen and (max-width: 768px) {
+        grid-area: title;
         font-size: 20px;
         font-weight: 600;
-        grid-area: title;
     }
 }
 
 .autor {
     @media only screen and (max-width: 768px) {
+        grid-area: autor;
         font-size: 20px;
         font-style: italic;
-        grid-area: autor;
     }
 }

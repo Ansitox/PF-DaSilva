@@ -13,8 +13,8 @@
 }
 
 .home-title {
-    width: 50%;
     align-self: center;
+    width: 50%;
     padding-bottom: 20px;
     border-bottom: map-get($colors, main) 2px solid;
     @media only screen and (max-width: 768px) {
@@ -66,9 +66,9 @@
 .home-section-1 {
     padding: 20px 0;
     @media only screen and (max-width: 768px) {
+        margin: 20px 0;
         border-top: map-get($colors, secondary) 5px solid;
         border-bottom: map-get($colors, secondary) 5px solid;
-        margin: 20px 0;
     }
 }
 

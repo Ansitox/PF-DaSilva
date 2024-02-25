@@ -11,8 +11,8 @@
     "message data";
     h2 {
         @extend .titles;
-        text-align: center;
         grid-area: title;
+        text-align: center;
         @media only screen and (max-width: 768px) {
             font-size: 28px;
             font-weight: 600;
@@ -61,44 +61,44 @@
 #name, #email {
     width: 85%;
     height: 50px;
+    margin: 10px 0;
+    padding: 0 20px;
     background-color: map-get($colors, secondary);
     border: none;
     border-radius: 50px;
-    padding: 0 20px;
-    margin: 10px 0;
 }
 
 .message-box {
     min-height: 200px;
-    max-height: 500px   ;
+    max-height: 500px;
+    margin-top: 10px;
+    padding: 20px;
     background-color: map-get($colors, secondary);
     border: none;
     border-radius: 20px;
-    padding: 20px;
-    margin-top: 10px;
 }
 
 .submit-input {
     width: fit-content;
-    background-color: white;
-    border: none;
-    text-transform: uppercase;
     align-self: flex-end;
+    margin: 10px 0;
+    padding: 0 10px;
     font-size: 20px;
     color: map-get($colors, main);
     font-weight: 600;
-    padding: 0 10px;
-    margin: 10px 0;
+    text-transform: uppercase;
+    background-color: white;
+    border: none;
     &:hover {
+        padding: 0 10px;
         background-color: map-get($colors, terciary);
         border-radius: 50px;
-        padding: 0 10px;
     }
     &:active {
         @media only screen and (max-width: 768px) {
+            padding: 0 10px;
             background-color: map-get($colors, terciary);
             border-radius: 50px;
-            padding: 0 10px;
         }
     }
     @media only screen and (max-width: 768px) {
@@ -109,8 +109,8 @@
 .contact-data {
     grid-area: data;
     ul {
-        list-style-type: none;
         color: map-get($colors, main);
+        list-style-type: none;
         li {
             img {
                 padding-right: 10px;
