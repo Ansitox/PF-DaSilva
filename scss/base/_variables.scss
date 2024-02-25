@@ -12,8 +12,18 @@ $tipography: (
             color: map-get($colors, main),
             main-title-w: 600
         ),
-        text: (
+        texts: (
             font-size: 24px,
+        )
+    ),
+    mobile: (
+        titles: (
+            font-size: 28px,
+            color: map-get($colors, main),
+            main-title-w: 600
+        ),
+        texts: (
+            font-size: 16px,
         )
     )
 );

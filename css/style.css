@@ -27,11 +27,6 @@
   border: none;
 }
 
-.titles, .contact-content h2, .library-section h2, .shop-content h2, .products-section-title h2, .plants-section-title h2, .section-1-text h2, .section-2-text h2, .home-main h1 {
-  color: #3E8A53;
-  font-size: 68px;
-}
-
 /*---------------------------------------------------- HOME -----------------------------------------------------------------------*/
 .home-content {
   display: flex;
@@ -60,6 +55,8 @@
   text-align: center;
 }
 .home-main h1 {
+  color: #3E8A53;
+  font-size: 68px;
   text-align: center;
   font-weight: 600;
 }
@@ -123,15 +120,14 @@
 .section-1-text, .section-2-text {
   align-self: center;
 }
-@media only screen and (max-width: 768px) {
-  .section-1-text h2, .section-2-text h2 {
-    font-size: 24px;
-  }
-}
-
-.titles, .contact-content h2, .library-section h2, .shop-content h2, .products-section-title h2, .plants-section-title h2, .home-main h1, .section-1-text h2, .section-2-text h2 {
+.section-1-text h2, .section-2-text h2 {
   color: #3E8A53;
   font-size: 68px;
+}
+@media only screen and (max-width: 768px) {
+  .section-1-text h2, .section-2-text h2 {
+    font-size: 28px;
+  }
 }
 
 /*-------------------------------------------------- PRODUCTS ----------------------------------------------------------------------*/
@@ -150,6 +146,10 @@
   grid-area: title;
   text-align: center;
   font-size: 24px;
+}
+.plants-section-title h2 {
+  color: #3E8A53;
+  font-size: 68px;
 }
 .plants-section-title:nth-child(2) {
   grid-area: card1;
@@ -195,6 +195,11 @@
   text-align: center;
   font-size: 24px;
 }
+.products-section-title h2 {
+  color: #3E8A53;
+  font-size: 68px;
+}
+
 .card-img-top {
   height: 300px;
   object-fit: cover;
@@ -240,11 +245,6 @@
     border-radius: 50px;
   }
 }
-.titles, .contact-content h2, .library-section h2, .shop-content h2, .home-main h1, .section-1-text h2, .section-2-text h2, .plants-section-title h2, .products-section-title h2 {
-  color: #3E8A53;
-  font-size: 68px;
-}
-
 /*----------------------------------------------------- SHOP ----------------------------------------------------------------------*/
 .shopping-bar {
   display: flex;
@@ -271,6 +271,8 @@
   justify-content: center;
 }
 .shop-content h2 {
+  color: #3E8A53;
+  font-size: 68px;
   text-align: center;
 }
 
@@ -333,11 +335,6 @@
     font-size: 20px;
   }
 }
-.titles, .contact-content h2, .library-section h2, .home-main h1, .section-1-text h2, .section-2-text h2, .plants-section-title h2, .products-section-title h2, .shop-content h2 {
-  color: #3E8A53;
-  font-size: 68px;
-}
-
 /*---------------------------------------------------- LIBRARY --------------------------------------------------------------------*/
 .library-bar {
   display: flex;
@@ -346,6 +343,8 @@
 }
 
 .library-section h2 {
+  color: #3E8A53;
+  font-size: 68px;
   text-align: center;
 }
 @media only screen and (max-width: 768px) {
@@ -426,11 +425,6 @@
   }
 }
 
-.titles, .contact-content h2, .home-main h1, .section-1-text h2, .section-2-text h2, .plants-section-title h2, .products-section-title h2, .shop-content h2, .library-section h2 {
-  color: #3E8A53;
-  font-size: 68px;
-}
-
 /*--------------------------------------------------- CONTACT ---------------------------------------------------------------------*/
 .contact-content {
   display: grid;
@@ -438,6 +432,8 @@
   grid-template-areas: "title title" "message data";
 }
 .contact-content h2 {
+  color: #3E8A53;
+  font-size: 68px;
   grid-area: title;
   text-align: center;
 }
