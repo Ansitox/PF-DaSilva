@@ -26,7 +26,7 @@
         font-weight: map-get(map-get(map-get($tipography, desktop), titles), main-title-w);
         text-shadow: 1px 1px 5px map-get($colors, terciary);
         @media only screen and (max-width: 768px) {
-            font-size: map-get(map-get(map-get($tipography, mobile), titles), font-size);
+            font-size: 36px;
         }
     }
 }
