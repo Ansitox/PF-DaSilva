@@ -20,7 +20,8 @@ El proyecto está estructurado en varias páginas principales:
 
 ## Tecnologías Utilizadas
 
-- HTML5 y CSS3 para la estructura y el diseño del sitio web.
+- Figma, Photoshop y Adobe Illustrator para el diseño de los wireframes.
+- HTML5, CSS3 y SASS para la estructura y el diseño del sitio web.
 - Git y GitHub para el control de versiones y la colaboración en el desarrollo del proyecto.
 
 ## Autor
