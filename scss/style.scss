@@ -40,8 +40,8 @@ body {
     bottom: 50px;
     right: 50px;
     img {
-        width: 75px;
-        height: 75px;
+        width: 60px;
+        height: 60px;
         padding: 10px;
         border-radius: 50%;
         background-color: map-get($colors, main);
@@ -70,27 +70,37 @@ body {
 @keyframes pulse {
     0% {
         box-shadow: 
-        0 0 0 0 #A9F291, 
-        0 0 0 0 #A9F291;
+        0 0 0 5px #A9F29100, 
+        0 0 0 5px #3E8A5300;
     }
-    25% {
+    10% {
         box-shadow: 
-        0 0 0 10px #A9F29120, 
-        0 0 0 5px #A9F29120;
+        0 0 2px 10px #A9F29180, 
+        0 0 2px 5px #3E8A5380;
+    }
+    20% {
+        box-shadow: 
+        0 0 2px 20px #A9F29180, 
+        0 0 2px 0 #3E8A5380;
+    }
+    30% {
+        box-shadow: 
+        0 0 2px 20px #A9F29180, 
+        0 0 2px 10px #3E8A5380;
+    }
+    40% {
+        box-shadow: 
+        0 0 0 0 #A9F29180, 
+        0 0 0 0 #3E8A5380;
     }
     50% {
         box-shadow: 
-        0 0 0 20px #A9F29120, 
-        0 0 0 0 #A9F291;
+        0 0 2px 15px #A9F29180, 
+        0 0 2px 5px #3E8A5380;
     }
-    75% {
+    60% {
         box-shadow: 
-        0 0 0 20px #A9F29120, 
-        0 0 0 10px #A9F29120;
-    }
-    100% {
-        box-shadow: 
-        0 0 0 20px #A9F29120, 
-        0 0 0 10px #A9F29120;
+        0 0 0 0 #A9F29180, 
+        0 0 0 0 #3E8A5380;
     }
 }
