@@ -11,18 +11,14 @@
 }
 
 .filter-box {
-    height: 50px;
+    @extend %secondary-rounded-bg;
     padding: 10px;
-    background-color: map-get($colors, secondary);
-    border-radius: 50px;
 }
 
 .shop-content {
     @include flex (column, center);
     h2 {
-        color: map-get($colors, main);
-        font-size: map-get(map-get(map-get($tipography, desktop), titles), font-size);
-        text-align: center;
+        @extend %section-titles-center;
     }
 }
 
@@ -40,11 +36,9 @@
 }
 
 .search-bar {
+    @extend %secondary-rounded-bg;
     width: 50%;
-    height: 50px;
     padding: 0 10px;
-    background-color: map-get($colors, secondary);
-    border-radius: 50px;
     input {
         width: calc(100% - 49px);
         background-color: #00000000;
@@ -56,11 +50,9 @@
 }
 
 .shopping-cart {
-    height: 50px;
+    @extend %secondary-rounded-bg;
     margin-left: 10px;
     padding: 10px;
-    background-color: map-get($colors, secondary);
-    border-radius: 50px;
 }
 
 .card-img-top {

@@ -1,5 +1,20 @@
-/*---------------------------------------------------- HEADER ---------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+.products-section-title h2, .plants-section-title h2, .section-1-text h2, .section-2-text h2, .contact-content h2, .library-section h2, .shop-content h2, .home-main h1 {
+  color: #3E8A53;
+  font-size: 68px;
+}
+
+.contact-content h2, .library-section h2, .shop-content h2, .home-main h1 {
+  text-align: center;
+}
+
+.shopping-cart, .search-bar, .filter-box {
+  height: 50px;
+  background-color: #A9F291;
+  border-radius: 50px;
+}
+
+/*---------------------------------------------------- HEADER ---------------------------------------------------------------------*/
 .logo-img {
   width: 100px;
   height: 100px;
@@ -58,9 +73,6 @@
   text-align: center;
 }
 .home-main h1 {
-  color: #3E8A53;
-  font-size: 68px;
-  text-align: center;
   font-weight: 600;
   text-shadow: 1px 1px 5px #F4EE91;
 }
@@ -131,10 +143,6 @@
 .section-1-text, .section-2-text {
   align-self: center;
 }
-.section-1-text h2, .section-2-text h2 {
-  color: #3E8A53;
-  font-size: 68px;
-}
 @media only screen and (max-width: 768px) {
   .section-1-text h2, .section-2-text h2 {
     font-size: 28px;
@@ -143,9 +151,7 @@
 
 @keyframes bounce-top {
   0% {
-    -webkit-transform: translateY(-45px);
     transform: translateY(-45px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity: 1;
   }
@@ -153,39 +159,27 @@
     opacity: 1;
   }
   40% {
-    -webkit-transform: translateY(-24px);
     transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   65% {
-    -webkit-transform: translateY(-12px);
     transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   82% {
-    -webkit-transform: translateY(-6px);
     transform: translateY(-6px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   93% {
-    -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   25%, 55%, 75%, 87% {
-    -webkit-transform: translateY(0px);
     transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   100% {
-    -webkit-transform: translateY(0px);
     transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
     opacity: 1;
   }
@@ -206,10 +200,6 @@
   grid-area: title;
   text-align: center;
   font-size: 24px;
-}
-.plants-section-title h2 {
-  color: #3E8A53;
-  font-size: 68px;
 }
 .plants-section-title:nth-child(2) {
   grid-area: card1;
@@ -255,11 +245,6 @@
   text-align: center;
   font-size: 24px;
 }
-.products-section-title h2 {
-  color: #3E8A53;
-  font-size: 68px;
-}
-
 .card-img-top {
   height: 300px;
   object-fit: cover;
@@ -324,10 +309,7 @@
 }
 
 .filter-box {
-  height: 50px;
   padding: 10px;
-  background-color: #A9F291;
-  border-radius: 50px;
 }
 
 .shop-content {
@@ -336,12 +318,6 @@
   justify-content: center;
   align-items: stretch;
 }
-.shop-content h2 {
-  color: #3E8A53;
-  font-size: 68px;
-  text-align: center;
-}
-
 .search-bar, .filter-box, .shopping-cart {
   display: flex;
   flex-direction: row;
@@ -358,10 +334,7 @@
 
 .search-bar {
   width: 50%;
-  height: 50px;
   padding: 0 10px;
-  background-color: #A9F291;
-  border-radius: 50px;
 }
 .search-bar input {
   width: calc(100% - 49px);
@@ -373,11 +346,8 @@
 }
 
 .shopping-cart {
-  height: 50px;
   margin-left: 10px;
   padding: 10px;
-  background-color: #A9F291;
-  border-radius: 50px;
 }
 
 .card-img-top {
@@ -422,11 +392,6 @@
   margin-bottom: 20px;
 }
 
-.library-section h2 {
-  color: #3E8A53;
-  font-size: 68px;
-  text-align: center;
-}
 @media only screen and (max-width: 768px) {
   .library-section h2 {
     font-size: 28px;
@@ -516,10 +481,7 @@
   grid-template-areas: "title title" "message data";
 }
 .contact-content h2 {
-  color: #3E8A53;
-  font-size: 68px;
   grid-area: title;
-  text-align: center;
 }
 @media only screen and (max-width: 768px) {
   .contact-content h2 {

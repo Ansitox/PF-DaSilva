@@ -7,10 +7,8 @@
     "title title"
     "message data";
     h2 {
-        color: map-get($colors, main);
-        font-size: map-get(map-get(map-get($tipography, desktop), titles), font-size);
+        @extend %section-titles-center;
         grid-area: title;
-        text-align: center;
         @media only screen and (max-width: 768px) {
             font-size: map-get(map-get(map-get($tipography, mobile), titles), font-size);
             font-weight: map-get(map-get(map-get($tipography, mobile), titles), main-title-w);

@@ -22,9 +22,7 @@
 .home-main {
     text-align: center;
     h1 {
-        color: map-get($colors, main);
-        font-size: map-get(map-get(map-get($tipography, desktop), titles), font-size);
-        text-align: center;
+        @extend %section-titles-center;
         font-weight: map-get(map-get(map-get($tipography, desktop), titles), main-title-w);
         text-shadow: 1px 1px 5px map-get($colors, terciary);
         @media only screen and (max-width: 768px) {
@@ -81,8 +79,7 @@
 .section-1-text, .section-2-text {
     align-self: center;
     h2 {
-        color: map-get($colors, main);
-        font-size: map-get(map-get(map-get($tipography, desktop), titles), font-size);
+        @extend %section-titles-general;
         @media only screen and (max-width: 768px) {
             font-size: map-get(map-get(map-get($tipography, mobile), titles), font-size);
         }
@@ -91,53 +88,36 @@
 
 @keyframes bounce-top {
     0% {
-      -webkit-transform: translateY(-45px);
-              transform: translateY(-45px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      opacity: 1;
+        transform: translateY(-45px);
+        animation-timing-function: ease-in;
+        opacity: 1;
     }
     24% {
-      opacity: 1;
+        opacity: 1;
     }
     40% {
-      -webkit-transform: translateY(-24px);
-              transform: translateY(-24px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
+        transform: translateY(-24px);
+        animation-timing-function: ease-in;
     }
     65% {
-      -webkit-transform: translateY(-12px);
-              transform: translateY(-12px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
+        transform: translateY(-12px);
+        animation-timing-function: ease-in;
     }
     82% {
-      -webkit-transform: translateY(-6px);
-              transform: translateY(-6px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
     }
     93% {
-      -webkit-transform: translateY(-4px);
-              transform: translateY(-4px);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
+        transform: translateY(-4px);
+        animation-timing-function: ease-in;
     }
-    25%,
-    55%,
-    75%,
-    87% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
+    25%, 55%, 75%, 87% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
     }
     100% {
-      -webkit-transform: translateY(0px);
-              transform: translateY(0px);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-      opacity: 1;
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
     }
 }

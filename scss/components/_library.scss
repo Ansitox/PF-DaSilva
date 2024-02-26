@@ -7,9 +7,7 @@
 
 .library-section {
     h2 {
-        color: map-get($colors, main);
-        font-size: map-get(map-get(map-get($tipography, desktop), titles), font-size);
-        text-align: center;
+        @extend %section-titles-center;
         @media only screen and (max-width: 768px) {
             font-size: map-get(map-get(map-get($tipography, mobile), titles), font-size);
             font-weight: map-get(map-get(map-get($tipography, desktop), titles), main-title-w);
