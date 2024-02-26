@@ -1,10 +1,7 @@
-@import '../base/extends';
-
 /*---------------------------------------------------- LIBRARY --------------------------------------------------------------------*/
 
 .library-bar {
-    display: flex;
-    justify-content: space-between;
+    @include flex ($justify: space-between);
     margin-bottom: 20px;
 }
 
@@ -14,15 +11,14 @@
         font-size: map-get(map-get(map-get($tipography, desktop), titles), font-size);
         text-align: center;
         @media only screen and (max-width: 768px) {
-            font-size: 28px;
-            font-weight: 600;
+            font-size: map-get(map-get(map-get($tipography, mobile), titles), font-size);
+            font-weight: map-get(map-get(map-get($tipography, desktop), titles), main-title-w);
         }
     }
 }
 
 .library-list {
-    display: flex;
-    flex-direction: column;
+    @include flex (column);
 }
 
 .list-titles, .list-items {
@@ -32,15 +28,15 @@
 
 .list-titles {
     color: map-get($colors, main);
-    font-size: 30px;
-    font-weight: 700;
+    font-size: map-get(map-get(map-get(map-get($tipography, desktop), lists), titles), font-size);
+    font-weight: map-get(map-get(map-get(map-get($tipography, desktop), lists), titles), weight);
 }
 
 .list-items {
     padding-top: 10px;
     color: map-get($colors, main);
-    font-size: 26px;
-    font-weight: 400;
+    font-size: map-get(map-get(map-get(map-get($tipography, desktop), lists), items), font-size);
+    font-weight: map-get(map-get(map-get(map-get($tipography, desktop), lists), items), weight);
     &:hover {
         background-color: map-get($colors, secondary-50);
     }
@@ -49,15 +45,14 @@
     }
     @media only screen and (max-width: 768px) {
         grid-template-columns: repeat(8, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
         "title title title title title title title title"
         "empty empty empty empty autor autor autor link";
     }
 }
 
 .link {
-    display: flex;
-    justify-content: center;
+    @include flex ($justify: center);
     @media only screen and (max-width: 768px) {
         grid-area: link;
     }

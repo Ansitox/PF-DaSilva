@@ -1,10 +1,8 @@
-@import '../base/extends';
-
 /*-------------------------------------------------- PRODUCTS ----------------------------------------------------------------------*/
 
 .plants-section {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "title title title"
     "card1 card2 card3"
     "card4 card5 card6";
@@ -46,7 +44,7 @@
 
 .products-section {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "title title title"
     "card1 card2 card3";
     grid-template-columns: repeat(3, 1fr);
@@ -69,7 +67,7 @@
 .products-section-title {
     grid-area: title;
     text-align: center;
-    font-size: 24px;
+    font-size: map-get(map-get(map-get($tipography, desktop), texts), font-size);
     h2 {
         color: map-get($colors, main);
         font-size: map-get(map-get(map-get($tipography, desktop), titles), font-size);
@@ -101,11 +99,11 @@
 @media only screen and (max-width: 768px) {
     .plants-section-title, .products-section-title {
         p {
-            font-size: 18px;
+            font-size: map-get(map-get(map-get($tipography, mobile), texts), font-size);
         }
         h2 {
-            font-size: 28px;
-            font-weight: 600;
+            font-size: map-get(map-get(map-get($tipography, mobile), titles), font-size);
+            font-weight: map-get(map-get(map-get($tipography, mobile), titles), main-title-w);
         }
     }
 
@@ -114,9 +112,7 @@
     }
 
     .plants-section, .products-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (column, $align: center);
         .carousel {
             display: flex;
         }

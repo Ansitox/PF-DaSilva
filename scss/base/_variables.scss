@@ -7,23 +7,86 @@ $colors: (
 
 $tipography: (
     desktop: (
+        header: (
+            tabs: (
+                font-size: 30px
+            )
+        ),
         titles: (
             font-size: 68px,
             color: map-get($colors, main),
             main-title-w: 600
         ),
+        subtitles: (
+            font-size: 28px
+        ),
         texts: (
             font-size: 24px,
+        ),
+        lists: (
+            titles: (
+                font-size: 30px,
+                weight: 700
+            ),
+            items: (
+                font-size: 26px,
+                weight: 400
+            )
+        ),
+        forms: (
+            titles: (
+                font-size: 28px
+            ),
+            lables: (
+                font-size: 20px
+            )
+        ),
+        buttons: (
+            font-size: 20px,
+            weight: 600,
+            transform: uppercase
+        ),
+        footer: (
+            titles: (
+                font-size: 30px,
+                color: map-get($colors, terciary),
+                transform: uppercase
+            ),
+            list-items: (
+                font-size: 16px,
+            )
         )
     ),
     mobile: (
         titles: (
             font-size: 28px,
             color: map-get($colors, main),
-            main-title-w: 600
+            main-title-w: 600,
+            align: center
+        ),
+        subtitles: (
+            font-size: 22px,
+            weight: 600,
+            align: center
         ),
         texts: (
+            font-size: 20px,
+        ),
+        forms: (
+            titles: (
+                font-size: 22px
+            ),
+            lables: (
+                font-size: 16px
+            )
+        ),
+        buttons: (
             font-size: 16px,
+        ),
+        footer: (
+            titles: (
+                font-size: 24px,
+            )
         )
     )
 );

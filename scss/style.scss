@@ -1,5 +1,7 @@
+// Globals
 @import './base/variables';
-
+@import './base/mixins';
+// Partials
 @import './components/header';
 @import './components/home';
 @import './components/products';
@@ -7,10 +9,11 @@
 @import './components/library';
 @import './components/contact';
 @import './components/footer';
-
+// Fonts
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Rajdhani', sans-serif;
@@ -18,8 +21,7 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    @include flex (column);
 }
 
 /*---------------------------------------------- CONTENT CONTAINER ----------------------------------------------------------------*/
@@ -55,9 +57,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     .home-content>section, .section-1-text, .section-2-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (column, flex-start, center);
     }
 
     .home-main, .section-1-text, .section-2-text {
@@ -66,41 +66,41 @@ body {
         }
     }
 }
-
+// Pulse animation
 @keyframes pulse {
     0% {
-        box-shadow: 
-        0 0 0 5px #A9F29100, 
+        box-shadow:
+        0 0 0 5px #A9F29100,
         0 0 0 5px #3E8A5300;
     }
     10% {
-        box-shadow: 
-        0 0 2px 10px #A9F29180, 
+        box-shadow:
+        0 0 2px 10px #A9F29180,
         0 0 2px 5px #3E8A5380;
     }
     20% {
-        box-shadow: 
-        0 0 2px 20px #A9F29180, 
+        box-shadow:
+        0 0 2px 20px #A9F29180,
         0 0 2px 0 #3E8A5380;
     }
     30% {
-        box-shadow: 
-        0 0 2px 20px #A9F29180, 
+        box-shadow:
+        0 0 2px 20px #A9F29180,
         0 0 2px 10px #3E8A5380;
     }
     40% {
-        box-shadow: 
-        0 0 0 0 #A9F29180, 
+        box-shadow:
+        0 0 0 0 #A9F29180,
         0 0 0 0 #3E8A5380;
     }
     50% {
-        box-shadow: 
-        0 0 2px 15px #A9F29180, 
+        box-shadow:
+        0 0 2px 15px #A9F29180,
         0 0 2px 5px #3E8A5380;
     }
     60% {
-        box-shadow: 
-        0 0 0 0 #A9F29180, 
+        box-shadow:
+        0 0 0 0 #A9F29180,
         0 0 0 0 #3E8A5380;
     }
 }

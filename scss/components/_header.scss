@@ -1,5 +1,3 @@
-@import '../base/variables';
-
 /*---------------------------------------------------- HEADER ---------------------------------------------------------------------*/
 
 .logo-img {
@@ -17,7 +15,7 @@
 }
 
 .container-fluid {
-    font-size: 30px;
+    font-size: map-get(map-get(map-get(map-get($tipography, desktop), header), tabs), font-size);
     background-color: map-get($colors, main);
 }
 

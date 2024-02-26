@@ -1,29 +1,26 @@
 /*---------------------------------------------------- FOOTER ---------------------------------------------------------------------*/
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex (column, space-between);
     background-color: map-get($colors, main);
 }
 
 .info-container {
-    display: flex;
-    justify-content: space-around;
+    @include flex ($justify: space-around);
     color: white;
     ul {
         padding-top: 20px;
-        font-size: 16px;
+        font-size: map-get(map-get(map-get(map-get($tipography, desktop), footer), list-items), font-size);
         list-style-type: none;
         li {
             padding-bottom: 10px;
             h3 {
-                font-size: 30px;
-                text-transform: uppercase;
-                color: map-get($colors, terciary);
+                font-size: map-get(map-get(map-get(map-get($tipography, desktop), footer), titles), font-size);
+                text-transform: map-get(map-get(map-get(map-get($tipography, desktop), footer), titles), transform);
+                color: map-get(map-get(map-get(map-get($tipography, desktop), footer), titles), color);
                 @media only screen and (max-width: 768px) {
-                    font-size: 24px;
-                } 
+                    font-size: map-get(map-get(map-get(map-get($tipography, mobile), footer), titles), font-size);
+                }
             }
             img {
                 max-width: 40px;
@@ -34,18 +31,16 @@
         }
     }
     @media only screen and (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (column, flex-start, center);
         color: white;
-    } 
+    }
 }
 
 .footer-section {
     width: 30%;
     @media only screen and (max-width: 768px) {
         width: 50%;
-    } 
+    }
 }
 
 .media-icons {
@@ -62,15 +57,12 @@
         }
     }
     @media only screen and (max-width: 768px) {
-        display: flex;
-        justify-content: center;
-    } 
+        @include flex ($justify: center);
+    }
 }
 
 .copyright-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (row, center, center);
     height: 50px;
     background-color: map-get($colors, secondary);
 }
@@ -78,5 +70,5 @@
 .media-info {
     @media only screen and (max-width: 768px) {
         display: none;
-    } 
+    }
 }

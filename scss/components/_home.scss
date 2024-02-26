@@ -1,11 +1,7 @@
-@import '../base/variables';
-@import '../base/extends';
-
 /*---------------------------------------------------- HOME -----------------------------------------------------------------------*/
 
 .home-content {
-    display: flex;
-    flex-direction: column;
+    @include flex (column);
     font-size: map-get(map-get(map-get($tipography, desktop), texts), font-size);
     @media only screen and (max-width: 768px) {
         font-size: map-get(map-get(map-get($tipography, mobile), texts), font-size);
@@ -38,8 +34,7 @@
 }
 
 .img-main-section {
-    display: flex;
-    justify-content: center;
+    @include flex ($justify: center);
     :nth-child(2) {
         margin: 0 3%;
     }
@@ -78,6 +73,9 @@
 .home-section-2 {
     flex-direction: row-reverse;
     text-align: right;
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .section-1-text, .section-2-text {
@@ -87,7 +85,7 @@
         font-size: map-get(map-get(map-get($tipography, desktop), titles), font-size);
         @media only screen and (max-width: 768px) {
             font-size: map-get(map-get(map-get($tipography, mobile), titles), font-size);
-        }   
+        }
     }
 }
 
