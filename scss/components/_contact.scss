@@ -34,8 +34,10 @@
         label {
             font-size: map-get(map-get(map-get(map-get($tipography, desktop), forms), lables), font-size);
             color: map-get($colors, main);
+            font-weight: map-get(map-get(map-get(map-get($tipography, desktop), forms), lables), weight);
             @media only screen and (max-width: 768px) {
                 font-size: map-get(map-get(map-get(map-get($tipography, mobile), forms), lables), font-size);
+                font-weight: map-get(map-get(map-get(map-get($tipography, desktop), forms), lables), weight);
             }
         }
     }
