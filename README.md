@@ -13,17 +13,17 @@
 >El proyecto está estructurado en varias páginas principales:
 
 >1. **Inicio:** Página de inicio que presenta una introducción a Shay Greenhouse y sus servicios.
-2. **Productos:** Página dedicada a mostrar la variedad de plantas y productos disponibles en el vivero.
-3. **Tienda:** Página donde los usuarios pueden explorar y comprar productos de jardinería y plantas.
-4. **Biblioteca:** Página que ofrece una selección de libros relacionados con la jardinería y la botánica.
-5. **Contacto:** Página para contacto.
+>2. **Productos:** Página dedicada a mostrar la variedad de plantas y productos disponibles en el vivero.
+>3. **Tienda:** Página donde los usuarios pueden explorar y comprar productos de jardinería y plantas.
+>4. **Biblioteca:** Página que ofrece una selección de libros relacionados con la jardinería y la botánica.
+>5. **Contacto:** Página para contacto.
 
 ## Tecnologías Utilizadas
 
-- Figma, Photoshop y Adobe Illustrator para el diseño de los wireframes.
-- HTML5, CSS3 y SASS para la estructura y el diseño del sitio web.
-- Git y GitHub para el control de versiones y la colaboración en el desarrollo del proyecto.
+>- Figma, Photoshop y Adobe Illustrator para el diseño de los wireframes.
+>- HTML5, CSS3 y SASS para la estructura y el diseño del sitio web.
+>- Git y GitHub para el control de versiones y la colaboración en el desarrollo del proyecto.
 
 ## Autor
 
-Este proyecto fue creado por Adrián Da Silva.
+>Este proyecto fue creado por Adrián Da Silva.
