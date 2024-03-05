@@ -19,6 +19,7 @@
     text-align: center;
     font-size: map-get(map-get(map-get($tipography, desktop), texts), font-size);
     h2 {
+        font-family: map-get(map-get(map-get($tipography, desktop), titles), font-family), sans-serif;
         @extend %section-titles-general;
     }
     &:nth-child(2) {
@@ -49,6 +50,9 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr;
     gap: 1rem;
+    h2 {
+        font-family: map-get(map-get(map-get($tipography, desktop), titles), font-family), sans-serif;
+    }
     &:nth-child(2) {
         grid-area: card1;
     }
@@ -93,6 +97,22 @@
         }
     }
 }
+
+.card-link {
+    width: fit-content;
+    align-self: center;
+    margin: 10px;
+    color: map-get($colors, main);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+        padding: 0 10px;
+        background-color: map-get($colors, terciary);
+        border-radius: 50px;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
     .plants-section-title, .products-section-title {

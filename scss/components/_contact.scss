@@ -8,6 +8,7 @@
     "message data";
     h2 {
         @extend %section-titles-center;
+        font-family: map-get(map-get(map-get($tipography, desktop), titles), font-family), sans-serif;
         grid-area: title;
         @media only screen and (max-width: 768px) {
             font-size: map-get(map-get(map-get($tipography, mobile), titles), font-size);

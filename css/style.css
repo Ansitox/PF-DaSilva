@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
 .products-section-title h2, .plants-section-title h2, .section-1-text h2, .section-2-text h2, .contact-content h2, .library-section h2, .shop-content h2, .home-main h1 {
   color: #3E8A53;
   font-size: 68px;
@@ -43,6 +44,20 @@
   border: none;
 }
 
+.nav-space {
+  width: 100px;
+}
+@media only screen and (max-width: 991px) {
+  .nav-space {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 /*---------------------------------------------------- HOME -----------------------------------------------------------------------*/
 .home-content {
   display: flex;
@@ -61,7 +76,6 @@
   align-self: center;
   width: 50%;
   padding-bottom: 20px;
-  border-bottom: #3E8A53 2px solid;
   animation: bounce-top 0.9s both;
 }
 @media only screen and (max-width: 768px) {
@@ -74,8 +88,9 @@
   text-align: center;
 }
 .home-main h1 {
+  font-family: "Exo2", sans-serif;
   font-weight: 600;
-  text-shadow: 1px 1px 5px #F4EE91;
+  text-shadow: 0 5px rgba(62, 138, 83, 0.5019607843);
 }
 @media only screen and (max-width: 768px) {
   .home-main h1 {
@@ -93,7 +108,9 @@
   margin: 0 3%;
 }
 .img-main-section img {
-  width: 25%;
+  width: 30%;
+  border-radius: 5%;
+  box-shadow: 0 3px 5px black;
 }
 @media only screen and (max-width: 768px) {
   .img-main-section img {
@@ -106,7 +123,9 @@
 }
 .home-section-1 img, .home-section-2 img {
   width: 50%;
-  align-self: center;
+  object-fit: cover;
+  border-radius: 5%;
+  box-shadow: 0 3px 5px black;
 }
 @media only screen and (max-width: 768px) {
   .home-section-1 img, .home-section-2 img {
@@ -126,8 +145,6 @@
 @media only screen and (max-width: 768px) {
   .home-section-1 {
     margin: 20px 0;
-    border-top: #A9F291 5px solid;
-    border-bottom: #A9F291 5px solid;
   }
 }
 
@@ -143,6 +160,9 @@
 
 .section-1-text, .section-2-text {
   align-self: center;
+}
+.section-1-text h2, .section-2-text h2 {
+  font-family: "Exo2", sans-serif;
 }
 @media only screen and (max-width: 768px) {
   .section-1-text h2, .section-2-text h2 {
@@ -202,6 +222,9 @@
   text-align: center;
   font-size: 24px;
 }
+.plants-section-title h2 {
+  font-family: "Exo2", sans-serif;
+}
 .plants-section-title:nth-child(2) {
   grid-area: card1;
 }
@@ -227,6 +250,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 1fr;
   gap: 1rem;
+}
+.products-section h2 {
+  font-family: "Exo2", sans-serif;
 }
 .products-section:nth-child(2) {
   grid-area: card1;
@@ -261,6 +287,21 @@
   text-decoration: none;
 }
 .card-body a:hover {
+  padding: 0 10px;
+  background-color: #F4EE91;
+  border-radius: 50px;
+}
+
+.card-link {
+  width: fit-content;
+  align-self: center;
+  margin: 10px;
+  color: #3E8A53;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+.card-link:hover {
   padding: 0 10px;
   background-color: #F4EE91;
   border-radius: 50px;
@@ -319,6 +360,10 @@
   justify-content: center;
   align-items: stretch;
 }
+.shop-content h2 {
+  font-family: "Exo2", sans-serif;
+}
+
 .search-bar, .filter-box, .shopping-cart {
   display: flex;
   flex-direction: row;
@@ -393,6 +438,9 @@
   margin-bottom: 20px;
 }
 
+.library-section h2 {
+  font-family: "Exo2", sans-serif;
+}
 @media only screen and (max-width: 768px) {
   .library-section h2 {
     font-size: 28px;
@@ -453,6 +501,10 @@
   text-align: center;
 }
 
+.autor, .year, .downloads, .link {
+  align-self: center;
+}
+
 @media only screen and (max-width: 768px) {
   .list-titles, .year, .downloads {
     display: none;
@@ -482,6 +534,7 @@
   grid-template-areas: "title title" "message data";
 }
 .contact-content h2 {
+  font-family: "Exo2", sans-serif;
   grid-area: title;
 }
 @media only screen and (max-width: 768px) {
@@ -687,7 +740,7 @@
 }
 
 .footer-section {
-  width: 30%;
+  width: 25%;
 }
 @media only screen and (max-width: 768px) {
   .footer-section {
@@ -708,6 +761,9 @@
   .media-icons a {
     padding: 10px;
   }
+}
+.media-icons a img {
+  width: 35px;
 }
 @media only screen and (max-width: 768px) {
   .media-icons {
@@ -773,6 +829,9 @@ body {
   border-radius: 50%;
   background-color: #3E8A53;
   animation: pulse 4s linear infinite;
+}
+.wapp img:hover {
+  animation: none;
 }
 @media only screen and (max-width: 768px) {
   .wapp {

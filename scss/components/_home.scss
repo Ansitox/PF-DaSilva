@@ -12,7 +12,6 @@
     align-self: center;
     width: 50%;
     padding-bottom: 20px;
-    border-bottom: map-get($colors, main) 2px solid;
     animation: bounce-top 0.9s both;
     @media only screen and (max-width: 768px) {
         display: none;
@@ -23,8 +22,9 @@
     text-align: center;
     h1 {
         @extend %section-titles-center;
+        font-family: map-get(map-get(map-get($tipography, desktop), titles), font-family), sans-serif;
         font-weight: map-get(map-get(map-get($tipography, desktop), titles), main-title-w);
-        text-shadow: 1px 1px 5px map-get($colors, terciary);
+        text-shadow: 0 5px #3E8A5380;
         @media only screen and (max-width: 768px) {
             font-size: 36px;
         }
@@ -37,7 +37,9 @@
         margin: 0 3%;
     }
     img {
-        width: 25%;
+        width: 30%;
+        border-radius: 5%;
+        box-shadow: 0 3px 5px black;
         @media only screen and (max-width: 768px) {
             width: 30%;
         }
@@ -48,7 +50,9 @@
     display: flex;
     img {
         width: 50%;
-        align-self: center;
+        object-fit: cover;
+        border-radius: 5%;
+        box-shadow: 0 3px 5px black;
         @media only screen and (max-width: 768px) {
             width: 100%;
         }
@@ -63,8 +67,6 @@
     padding: 20px 0;
     @media only screen and (max-width: 768px) {
         margin: 20px 0;
-        border-top: map-get($colors, secondary) 5px solid;
-        border-bottom: map-get($colors, secondary) 5px solid;
     }
 }
 
@@ -80,6 +82,7 @@
     align-self: center;
     h2 {
         @extend %section-titles-general;
+        font-family: map-get(map-get(map-get($tipography, desktop), titles), font-family), sans-serif;
         @media only screen and (max-width: 768px) {
             font-size: map-get(map-get(map-get($tipography, mobile), titles), font-size);
         }

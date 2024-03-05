@@ -8,6 +8,7 @@
 .library-section {
     h2 {
         @extend %section-titles-center;
+        font-family: map-get(map-get(map-get($tipography, desktop), titles), font-family), sans-serif;
         @media only screen and (max-width: 768px) {
             font-size: map-get(map-get(map-get($tipography, mobile), titles), font-size);
             font-weight: map-get(map-get(map-get($tipography, desktop), titles), main-title-w);
@@ -58,6 +59,10 @@
 
 .year, .downloads, .link {
     text-align: center;
+}
+
+.autor, .year, .downloads, .link {
+    align-self: center;
 }
 
 .list-titles, .year, .downloads {

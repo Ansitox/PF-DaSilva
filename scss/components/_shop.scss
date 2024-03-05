@@ -18,6 +18,7 @@
 .shop-content {
     @include flex (column, center);
     h2 {
+        font-family: map-get(map-get(map-get($tipography, desktop), titles), font-family), sans-serif;
         @extend %section-titles-center;
     }
 }

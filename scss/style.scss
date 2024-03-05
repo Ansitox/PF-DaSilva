@@ -12,6 +12,7 @@
 @import './components/footer';
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -49,8 +50,10 @@ body {
         border-radius: 50%;
         background-color: map-get($colors, main);
         animation: pulse 4s linear infinite;
+        &:hover {
+            animation: none;
+        }
     }
-
     @media only screen and (max-width: 768px) {
         display: none;
     }
