@@ -18,6 +18,7 @@
                 font-size: map-get(map-get(map-get(map-get($tipography, desktop), footer), titles), font-size);
                 text-transform: map-get(map-get(map-get(map-get($tipography, desktop), footer), titles), transform);
                 color: map-get(map-get(map-get(map-get($tipography, desktop), footer), titles), color);
+                text-align: center;
                 @media only screen and (max-width: 768px) {
                     font-size: map-get(map-get(map-get(map-get($tipography, mobile), footer), titles), font-size);
                 }
@@ -39,7 +40,16 @@
 .footer-section {
     width: 25%;
     @media only screen and (max-width: 768px) {
-        width: 50%;
+        width: 70%;
+    }
+    li {
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                color: map-get($colors, secondary);
+            }
+        }
     }
 }
 
@@ -66,8 +76,12 @@
 
 .copyright-container {
     @include flex (row, center, center);
-    height: 50px;
+    height: fit-content;
     background-color: map-get($colors, secondary);
+    p {
+        text-align: center;
+        padding-top: 10px;
+    }
 }
 
 .media-info {

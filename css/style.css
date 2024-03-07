@@ -717,6 +717,7 @@
   font-size: 30px;
   text-transform: uppercase;
   color: #F4EE91;
+  text-align: center;
 }
 @media only screen and (max-width: 768px) {
   .info-container ul li h3 {
@@ -744,8 +745,15 @@
 }
 @media only screen and (max-width: 768px) {
   .footer-section {
-    width: 50%;
+    width: 70%;
   }
+}
+.footer-section li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-section li a:hover {
+  color: #A9F291;
 }
 
 .media-icons {
@@ -779,8 +787,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: fit-content;
   background-color: #A9F291;
+}
+.copyright-container p {
+  text-align: center;
+  padding-top: 10px;
 }
 
 @media only screen and (max-width: 768px) {
